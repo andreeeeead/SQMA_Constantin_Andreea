@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('IntegralistTest') {
             steps {
-                sh 'mvn -Dtest=IntegralistTest test'
+                bat 'mvn -Dtest=IntegralistTest test'
             }
         }
         stage('CalculMedieTest') {
             steps {
-                sh 'mvn -Dtest=CalculMedieTest test'
+                bat 'mvn -Dtest=CalculMedieTest test'
             }
         }
 
