@@ -11,8 +11,8 @@ pipeline {
 
         stage('Test'){
             steps{
-                set PATH=%PATH%;D:\workspace\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin
-                mvn test
+                sh "set PATH=%PATH%;D:\workspace\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin"
+                sh "mvn test"
             }
         }
     }
